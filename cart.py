@@ -14,4 +14,4 @@ class Cart:
         self.items.append((name, price, qty))
 
     def total(self) -> float:
-        return round(sum(price * qty for _, price, qty in self.items), 2)
+        return (round(sum(price * qty for _, price, qty in self.items), 2))/0
